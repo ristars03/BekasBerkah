@@ -5,84 +5,51 @@ export const CatalogBuku = () => {
         <div className='px-12 flex flex-col gap-4 py-12'>
             <div className='grid grid-cols-5 gap-12'>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/Lemari2Pintu.svg" alt="" />
+                    <img src="/src/assets/BukuPJOK.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Lemari 2 Pintu</p>
-                        <p className='text-lg text-green-700'>Rp. 570,000</p>
+                        <p className='font-medium'>Buku PJOK Kelas 10</p>
+                        <p className='text-lg text-green-700'>Rp. 15,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/TasSekolah.svg" alt="" />
+                    <img src="/src/assets/BukuPrakarya.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Tas Sekolah</p>
-                        <p className='text-lg text-green-700'>Rp. 78,000</p>
+                        <p className='font-medium'>Buku Paket Prakarya</p>
+                        <p className='text-lg text-green-700'>Rp. 35,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/Kasur.svg" alt="" />
+                    <img src="/src/assets/BukuBiologi.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Kasur</p>
-                        <p className='text-lg text-green-700'>Rp. 850,000</p>
+                        <p className='font-medium'>Buku Paket Biologi</p>
+                        <p className='text-lg text-green-700'>Rp. 20,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/PvnSepatuuSneakers.svg" alt="" />
+                    <img src="/src/assets/NovelBedebahdiUjungTanduk.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>PVN Sepatu Sneaker</p>
-                        <p className='text-lg text-green-700'>Rp. 98,000</p>
+                        <p className='font-medium'>Novel Bedebah Tere Liye</p>
+                        <p className='text-lg text-green-700'>Rp. 50,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/ThriftBlouse.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Thrift Blouse</p>
-                        <p className='text-lg text-green-700'>Rp. 25,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/PintuKM.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Pintu Kamar Mandi</p>
-                        <p className='text-lg text-green-700'>Rp. 12,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/MejaBelajar.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Meja Belajar</p>
-                        <p className='text-lg text-green-700'>Rp. 100,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/NovelTereLiye.svg" alt="" />
+                    <img src="/src/assets/NoveltereLiye.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
@@ -93,18 +60,106 @@ export const CatalogBuku = () => {
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/GitarUkulele.svg" alt="" />
+                    <img src="/src/assets/BukuNasiKangKang.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>19 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Buku Nasi KangKang</p>
+                        <p className='text-lg text-green-700'>Rp. 59,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/KamusInggrisIndonesia.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>23 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Kamus Inggris Indonesia</p>
+                        <p className='text-lg text-green-700'>Rp. 60,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuMahirBahasaIndo.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>27 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Mahir Berbahasa Indonesia</p>
+                        <p className='text-lg text-green-700'>Rp. 30,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuMuqaddamAnak.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Gitar Ukulele</p>
-                        <p className='text-lg text-green-700'>Rp. 44,000</p>
+                        <p className='font-medium'>Buku Muqaddam Anak</p>
+                        <p className='text-lg text-green-700'>Rp. 45,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
+                    <img src="/src/assets/BukuUTBK.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>3 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>UTBK SBMPTN Saintek</p>
+                        <p className='text-lg text-green-700'>Rp. 85,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuSBP.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>19 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Buku SBP Matematik</p>
+                        <p className='text-lg text-green-700'>Rp. 90,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/NovelDilan.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>23 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Novel Dilan 1990</p>
+                        <p className='text-lg text-green-700'>Gratis</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuSeribuInspirasi.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>24 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Buku Seribu Inspirasi</p>
+                        <p className='text-lg text-green-700'>Rp. 25,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuMotivasi.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>7 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Buku Motivasi</p>
+                        <p className='text-lg text-green-700'>Rp. 25,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/NovelPerahuKertas.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
                         <p>2 Mei 2024</p>
@@ -115,113 +170,58 @@ export const CatalogBuku = () => {
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
+                    <img src="/src/assets/BukuPKN.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
-                        <p>2 Mei 2024</p>
+                        <p>19 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
+                        <p className='font-medium'>Buku Paket PKN</p>
+                        <p className='text-lg text-green-700'>Rp. 45,000</p>
+                    </div>
+                </Link>
+                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <img src="/src/assets/BukuIPA.svg" alt="" />
+                    <div className='flex justify-between text-sm items-center'>
+                        <p>Produk</p>
+                        <p>5 Mei 2024</p>
+                    </div>
+                    <div className='flex flex-col'>
+                        <p className='font-medium'>Buku IPA Kelas VII</p>
                         <p className='text-lg text-green-700'>Rp. 30,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
+                    <img src="/src/assets/KomikDragonBall.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
-                        <p>2 Mei 2024</p>
+                        <p>25 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
+                        <p className='font-medium'>Komik Dragonball Landmark</p>
+                        <p className='text-lg text-green-700'>Rp. 10,000</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
+                    <img src="/src/assets/KomikDetektifConan.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
-                        <p>2 Mei 2024</p>
+                        <p>27 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
+                        <p className='font-medium'>Komik Detektif Conan</p>
+                        <p className='text-lg text-green-700'>Gratis</p>
                     </div>
                 </Link>
                 <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
+                    <img src="/src/assets/BukuKisahTanahJawa.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
-                        <p>2 Mei 2024</p>
+                        <p>4 Mei 2024</p>
                     </div>
                     <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
-                    </div>
-                </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                    <img src="/src/assets/CelanaWanita.svg" alt="" />
-                    <div className='flex justify-between text-sm items-center'>
-                        <p>Produk</p>
-                        <p>2 Mei 2024</p>
-                    </div>
-                    <div className='flex flex-col'>
-                        <p className='font-medium'>Celana Wanita</p>
-                        <p className='text-lg text-green-700'>Rp. 30,000</p>
+                        <p className='font-medium'>Kisah Tanah Jawa</p>
+                        <p className='text-lg text-green-700'>Gratis</p>
                     </div>
                 </Link>
             </div>

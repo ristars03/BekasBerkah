@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 export const NavbarUtama = () => {
     return (
         <div className=' border-b border-black/20 flex flex-col md:flex-row md:gap-36 w-full justify-between p-5 py-7 md:px-12'>
-            <img src="/public/Logo.svg" alt="Logo" />
+            <Link to='/src/pages/Beranda.jsx'>
+            <img src="/public/Logo.svg" alt="Logo" width='185' height='40'/>  
+            </Link>
             <div className='flex w-full'>
                 <div className='border border-gray-400 rounded-l-md flex items-center px-2 w-1/3 md:w-1/4'>
                     <select name="" id="" className='w-full outline-none'>
