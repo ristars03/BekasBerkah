@@ -1,6 +1,6 @@
 import NavbarLanding from '../components/NavbarLanding';
 import HeroSection from '../components/HeroSection';
-import KategoriSection from '../components/KategoriSection';
+import KategoriLanding from '../components/KategoriLanding';
 import TerbaruSection from '../components/TerbaruSection';
 import Footer from '../components/Footer';
 
@@ -10,7 +10,7 @@ function LandingPage() {
     <div className="container"> 
       <NavbarLanding />
       <HeroSection />
-      <KategoriSection/>
+      <KategoriLanding/>
       <TerbaruSection/>
       <Footer />  
     </div>

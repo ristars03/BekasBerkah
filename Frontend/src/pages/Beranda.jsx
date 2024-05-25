@@ -1,6 +1,6 @@
 import NavbarUtama from '../components/NavbarUtama';
 import HeroSection from '../components/HeroSection';
-import KategoriSection from '../components/KategoriSection';
+import KategoriUtama from '../components/KategoriUtama';
 import TerbaruSection from '../components/TerbaruSection';
 import Footer from '../components/Footer';
 
@@ -10,7 +10,7 @@ function Beranda() {
     <div className="container"> 
       <NavbarUtama />
       <HeroSection />
-      <KategoriSection/>
+      <KategoriUtama/>
       <TerbaruSection/>
       <Footer />  
     </div>
