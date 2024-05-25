@@ -1,4 +1,4 @@
-import NavbarBeranda from '../components/NavbarBeranda';
+import NavbarUtama from '../components/NavbarUtama';
 import HeroSection from '../components/HeroSection';
 import KategoriSection from '../components/KategoriSection';
 import TerbaruSection from '../components/TerbaruSection';
@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 function Beranda() {
   return (
     <div className="container"> 
-      <NavbarBeranda />
+      <NavbarUtama />
       <HeroSection />
       <KategoriSection/>
       <TerbaruSection/>

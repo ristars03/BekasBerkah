@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const NavbarBeranda = () => {
+export const NavbarUtama = () => {
     return (
         <div className=' border-b border-black/20 flex flex-col md:flex-row md:gap-36 w-full justify-between p-5 py-7 md:px-12'>
             <img src="/public/Logo.svg" alt="Logo" />
@@ -39,4 +39,4 @@ export const NavbarBeranda = () => {
     )
 }
 
-export default NavbarBeranda;
+export default NavbarUtama;
