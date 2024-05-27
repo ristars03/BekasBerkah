@@ -1,7 +1,26 @@
+// import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 export const ProfileAkun = () => {
+
+    // const [datas, setDatas] = useState([]);
+
+    // useEffect(() => {
+    //   const fetchData = async () => {
+    //     try {
+    //       const response = await fetch('http://localhost:5000/jurusan');
+    //       const data = await response.json();
+    //       setDatas(data);
+    //     } catch (error) {
+    //       console.error('Error fetching data:', error);
+    //     }
+    //   };
+    //   fetchData();
+    // }, []);
+  
+    // console.log(datas);
+   
+
     return (
         <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-100 mx-auto'>
             <div className='h-14 px-40 bg-white border border-zinc-100 text-gray-500 flex mx-auto items-center justify-between'>
