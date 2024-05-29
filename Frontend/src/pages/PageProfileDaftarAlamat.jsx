@@ -1,5 +1,5 @@
 import NavbarUtama from '../components/NavbarUtama';
-import DaftarAlamat from '../components/DaftarAlamat';
+import ProfileDaftarAlamat from '../components/ProfileDaftarAlamat';
 
 
 
@@ -7,7 +7,7 @@ function PageProfileDaftarAlamat() {
   return (
     <div className="container"> 
       <NavbarUtama />  
-      <DaftarAlamat />  
+      <ProfileDaftarAlamat />  
     </div>
   );
 }
