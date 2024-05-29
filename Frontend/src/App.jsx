@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage'; 
 import SignUp from './pages/SignUp'; 
@@ -10,7 +10,8 @@ import PagePakaian from './pages/PagePakaian';
 import PageAksesoris from './pages/PageAksesoris';
 import PageSepatu from './pages/PageSepatu';
 import PageAlatMusik from './pages/PageAlatMusik';
-import PageProfile from './pages/PageProfile';
+import PageProfileAkun from './pages/PageProfileAkun';
+import PageProfileDaftarAlamat from './pages/PageProfileDaftarAlamat';
 
 const Home = () => (
   <>
@@ -43,7 +44,8 @@ const AppRoutes = () => {
         <Route path="/src/pages/PageAksesoris" element={<PageAksesoris />} />
         <Route path="/src/pages/PageSepatu" element={<PageSepatu />} />
         <Route path="/src/pages/PageAlatMusik" element={<PageAlatMusik />} />
-        <Route path="/src/pages/PageProfile" element={<PageProfile />} />
+        <Route path="/src/pages/PageProfileAkun" element={<PageProfileAkun />} />
+        <Route path="/src/pages/PageProfileDaftarAlamat" element={<PageProfileDaftarAlamat />} />
         
        </Routes>
     </>

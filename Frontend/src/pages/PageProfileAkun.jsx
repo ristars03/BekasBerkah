@@ -3,7 +3,7 @@ import ProfileAkun from '../components/ProfileAkun';
 
 
 
-function PageProfile() {
+function PageProfileAkun() {
   return (
     <div className="container"> 
       <NavbarUtama />  
@@ -12,4 +12,4 @@ function PageProfile() {
   );
 }
 
-export default PageProfile;
+export default PageProfileAkun;

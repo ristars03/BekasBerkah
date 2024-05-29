@@ -46,17 +46,17 @@ export const ProfileAkun = () => {
         <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
             <div className='h-14 px-40 bg-white border border-zinc-200 text-gray-500 flex mx-auto items-center justify-between'>
                 {/* Left Section */}
-                <Link to='/src/pages/PageProfile.jsx' className="flex items-center hover:text-green-800 font-medium">
-                    <h1 className="text-xl">Akun</h1>
+                <Link to='/src/pages/PageProfileAkun' className="flex items-center text-green-700 font-medium">
+                    <h1 className="text-xl underline">Akun</h1>
                 </Link>
 
                 {/* Center Section */}
-                <Link to='/' className="flex items-center hover:text-green-700 font-medium">
+                <Link to='/src/pages/PageProfileDaftarAlamat' className="flex items-center hover:text-green-700 font-medium">
                     <h1 className="text-xl">Daftar Alamat</h1>
                 </Link>
 
                 {/* Right Section */}
-                <Link to='/' className="flex items-center hover:text-green-700 font-medium">
+                <Link to='' className="flex items-center hover:text-green-700 font-medium">
                     <h1 className="text-xl">Katalog Barang</h1>
                 </Link>
             </div>
@@ -89,7 +89,7 @@ export const ProfileAkun = () => {
                         <input type="tel" value={nomorHp} onChange={handleUbahNomorHp} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none" />
                     </div>
                     <div className='flex items-end justify-end'>
-                        <button className='py-2 bg-green-700 text-white rounded-md hover:bg-green-600 w-[130px]'>Simpan</button>
+                        <button className='h-10 bg-green-700 text-white font-medium rounded-md hover:bg-green-600 w-[130px]'>Simpan</button>
                     </div>
                 </div>
             </div>
