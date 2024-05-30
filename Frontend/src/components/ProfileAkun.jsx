@@ -56,7 +56,7 @@ export const ProfileAkun = () => {
                 </Link>
 
                 {/* Right Section */}
-                <Link to='/src/pages/PageProfileKatalogB' className="flex items-center hover:text-green-700 font-medium">
+                <Link to='/src/pages/PageProfileKatalogBarang' className="flex items-center hover:text-green-700 font-medium">
                     <h1 className="text-xl">Katalog Barang</h1>
                 </Link>
             </div>

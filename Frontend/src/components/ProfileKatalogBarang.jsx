@@ -19,10 +19,10 @@ export const ProfileKatalogBarang = () => {
                     <h1 className="text-xl underline">Katalog Barang</h1>
                 </Link>
             </div>
-            <div className="justify-between flex w-full p-5 py-7 md:px-12">
+            <div className="justify-between flex w-full p-5 py-7 md:px-12 hover:text-green-700">
                 <div className='border border-lg border-gray-400 rounded-md flex px-2 gap-2 h-10 items-center '>
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#177533"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" /></svg>
-                    <Link to=''>Tambah Barang</Link>
+                    <Link to='/src/pages/PageTambahBarang'>Tambah Barang</Link>
                 </div>
             </div>
             <div className='px-12 flex flex-col gap-4 py-2'>

@@ -13,6 +13,7 @@ import PageAlatMusik from './pages/PageAlatMusik';
 import PageProfileAkun from './pages/PageProfileAkun';
 import PageProfileDaftarAlamat from './pages/PageProfileDaftarAlamat';
 import PageProfileKatalogBarang from './pages/PageProfileKatalogBarang';
+import PageTambahBarang from './pages/PageTambahBarang';
 
 const Home = () => (
   <>
@@ -48,6 +49,7 @@ const AppRoutes = () => {
         <Route path="/src/pages/PageProfileAkun" element={<PageProfileAkun />} />
         <Route path="/src/pages/PageProfileDaftarAlamat" element={<PageProfileDaftarAlamat />} />
         <Route path="/src/pages/PageProfileKatalogBarang" element={<PageProfileKatalogBarang />} />
+        <Route path="/src/pages/PageTambahBarang" element={<PageTambahBarang />} />
         
        </Routes>
     </>
