@@ -12,7 +12,7 @@ export const TB_BeratBarang = () => {
                 <div className="flex items-start justify-between">
                     <div className="w-[340px] px-4 text-align text-zinc-700">Masukkan berat dengan menimbang barang. Pastikan berat sesuai.</div>
                     <div className="flex-grow px-10 mt-[-32px] mb-8">
-                        <input type="text" className="border border-gray-300 rounded-lg w-full p-4" placeholder="Contoh : Sepatu nike mercurial CR7 Pemakaian normal selama lima tahun" />
+                        <input type="text" className="w-[360px] h-[53px] pl-4 bg-white rounded-lg border border-zinc-200 justify-between items-center inline-flex" placeholder='Berat Produk'/>
                     </div>
                 </div>
                 <div className="flex items-center">
@@ -22,15 +22,11 @@ export const TB_BeratBarang = () => {
                 <div className="flex items-start justify-between">
                     <div className="w-[340px] px-4 text-align text-zinc-700">Masukkan ukuran barang sesuai dengan aslinya. Pastikan ukuran sesuai.</div>
                     <div className="flex-grow px-10 mt-[-32px]">
-                        <select name="" id="" className='w-full outline-none rounded-lg border border-zinc-200 px-2 py-4'>
-                            <option value="" disabled selected hidden>Pilih Kategori</option>
-                            <option value="Furniture">Furniture</option>
-                            <option value="Pakaian">Pakaian</option>
-                            <option value="Buku">Buku</option>
-                            <option value="Sepatu">Sepatu</option>
-                            <option value="Aksesoris">Aksesoris</option>
-                            <option value="Alat Musik">Alat Musik</option>
-                        </select>
+                        <div className="w-[648px] h-[53px] justify-start items-start gap-6 inline-flex">
+                            <input type="text" className="h-[53px] pl-4 bg-white rounded-lg border border-zinc-200 justify-between items-center flex" placeholder='Panjang' />
+                            <input type="text" className="w-48 h-[53px] pl-4 bg-white rounded-lg border border-zinc-200 justify-between items-center flex" placeholder='Lebar' />
+                            <input type="text" className="w-48 h-[53px] pl-4 bg-white rounded-lg border border-zinc-200 justify-between items-center flex" placeholder='Tinggi' />
+                        </div>
                     </div>
                 </div>
             </div>
