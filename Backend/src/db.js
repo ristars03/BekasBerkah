@@ -7,7 +7,7 @@ const db = mysql2.createPool({
     host: "localhost", 
     user: "root",
     password: "",
-    database: "bekasberkah_db"
+    database: "bekasberkah"
 });
 
 const testConnection = async () => {
@@ -30,7 +30,6 @@ const query = async (query, values = []) => {
     }
 };
 
-// Memanggil testConnection untuk menguji koneksi ke database
 testConnection();
 
 export { testConnection, query };

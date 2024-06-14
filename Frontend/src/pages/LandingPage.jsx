@@ -4,7 +4,6 @@ import KategoriLanding from '../components/KategoriLanding';
 import TerbaruSection from '../components/TerbaruSection';
 import Footer from '../components/Footer';
 
-
 function LandingPage() {
   return (
     <div className="container"> 
