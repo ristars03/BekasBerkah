@@ -1,13 +1,29 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
+import db from "../config/Database.js";
+import router from "../routes/index.js";
 import { testConnection, query } from './db.js';
 
 dotenv.config();
 
 const app = express();
+app.use(cors({ credentials:true, origin: 'http://localhost:3000'}));
+app.use(cookieParser());
 app.use(express.json());
-app.use(cors());
+app.use(router);
+
+try {
+    await db.authenticate();
+    console.log('Database Connected');
+} catch (error) {
+    console.log(error);
+}
+
+// app.use(cookieParser());
+// app.use(express.json());
+// app.use(router);
 
 app.get("/alamat", async (req, res) => { 
     try {
