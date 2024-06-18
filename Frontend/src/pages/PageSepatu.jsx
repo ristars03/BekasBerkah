@@ -2,7 +2,7 @@ import NavbarUtama from '../components/NavbarUtama';
 import CatalogSepatu from '../components/CatalogSepatu';
 import KategoriLainnyaSepatu from '../components/KategoriLainnyaSepatu';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
+import FooterUtama from '../components/FooterUtama';
 
 
 function PageFurniture() {
@@ -12,7 +12,7 @@ function PageFurniture() {
       <CatalogSepatu />
       <KategoriLainnyaSepatu />
       <Banner />
-      <Footer />  
+      <FooterUtama />  
     </div>
   );
 }

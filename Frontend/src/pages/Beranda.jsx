@@ -2,7 +2,7 @@ import NavbarUtama from '../components/NavbarUtama';
 import HeroSection from '../components/HeroSection';
 import KategoriUtama from '../components/KategoriUtama';
 import TerbaruSectionUtama from '../components/TerbaruSectionUtama';
-import Footer from '../components/Footer';
+import FooterUtama from '../components/FooterUtama';
 
 
 function Beranda() {
@@ -12,7 +12,7 @@ function Beranda() {
       <HeroSection />
       <KategoriUtama/>
       <TerbaruSectionUtama/>
-      <Footer />  
+      <FooterUtama />  
     </div>
   );
 }

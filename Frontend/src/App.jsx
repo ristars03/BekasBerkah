@@ -14,7 +14,13 @@ import PageProfileAkun from './pages/PageProfileAkun';
 import PageProfileDaftarAlamat from './pages/PageProfileDaftarAlamat';
 import PageProfileKatalogBarang from './pages/PageProfileKatalogBarang';
 import PageTambahBarang from './pages/PageTambahBarang';
+import PageDetailDeskripsi from './pages/PageDetailDeskripsi';
 import PageDetailProduk from './pages/PageDetailProduk';
+import PageTermConditionsLanding from './pages/PageTermConditionsLanding';
+import PageTermConditionsUtama from './pages/PageTermConditionsUtama';
+import PagePrivacyLanding from './pages/PagePrivacyLanding';
+import PagePrivacyUtama from './pages/PagePrivacyUtama';
+import PageActionProfileBarang from './pages/PageActionProfileBarang';
 
 const Home = () => (
   <>
@@ -51,7 +57,14 @@ const AppRoutes = () => {
         <Route path="/src/pages/PageProfileDaftarAlamat" element={<PageProfileDaftarAlamat />} />
         <Route path="/src/pages/PageProfileKatalogBarang" element={<PageProfileKatalogBarang />} />
         <Route path="/src/pages/PageTambahBarang" element={<PageTambahBarang />} />
+        <Route path="/src/pages/PageDetailDeskripsi" element={<PageDetailDeskripsi />} />
         <Route path="/src/pages/PageDetailProduk" element={<PageDetailProduk />} />
+        <Route path="/src/pages/PageTermConditionsLanding" element={<PageTermConditionsLanding/>} />
+        <Route path="/src/pages/PageTermConditionsUtama" element={<PageTermConditionsUtama/>} />
+        <Route path="/src/pages/PagePrivacyLanding" element={<PagePrivacyLanding/>} />
+        <Route path="/src/pages/PagePrivacyUtama" element={<PagePrivacyUtama/>} />
+        <Route path="/src/pages/PageActionProfileBarang" element={<PageActionProfileBarang/>} />
+     
         
        </Routes>
     </>

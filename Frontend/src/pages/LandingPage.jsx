@@ -2,7 +2,7 @@ import NavbarLanding from '../components/NavbarLanding';
 import HeroSection from '../components/HeroSection';
 import KategoriLanding from '../components/KategoriLanding';
 import TerbaruSection from '../components/TerbaruSection';
-import Footer from '../components/Footer';
+import FooterLanding from '../components/FooterLanding';
 
 
 function LandingPage() {
@@ -12,7 +12,7 @@ function LandingPage() {
       <HeroSection />
       <KategoriLanding/>
       <TerbaruSection/>
-      <Footer />  
+      <FooterLanding />  
     </div>
   );
 }

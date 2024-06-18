@@ -38,7 +38,7 @@ export const ProfileKatalogBarang = () => {
                             <p className='text-lg text-green-700'>Rp. 370,000</p>
                         </div>
                     </Link>
-                    <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                    <Link to="/src/pages/PageActionProfileBarang" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                         <img src="/src/assets/TasSekolah.svg" alt="" />
                         <div className='flex justify-between text-sm items-center'>
                             <p>Produk</p>
@@ -50,17 +50,6 @@ export const ProfileKatalogBarang = () => {
                         </div>
                     </Link>
                     <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                        <img src="/src/assets/Kasur.svg" alt="" />
-                        <div className='flex justify-between text-sm items-center'>
-                            <p>Produk</p>
-                            <p>2 Mei 2024</p>
-                        </div>
-                        <div className='flex flex-col'>
-                            <p className='font-medium'>Kasur</p>
-                            <p className='text-lg text-green-700'>Rp. 850,000</p>
-                        </div>
-                    </Link>
-                    <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                         <img src="/src/assets/PvnSepatuuSneakers.svg" alt="" />
                         <div className='flex justify-between text-sm items-center'>
                             <p>Produk</p>
@@ -69,17 +58,6 @@ export const ProfileKatalogBarang = () => {
                         <div className='flex flex-col'>
                             <p className='font-medium'>PVN Sepatu Sneaker</p>
                             <p className='text-lg text-green-700'>Rp. 98,000</p>
-                        </div>
-                    </Link>
-                    <Link to="/src/pages/PageDetailProduk" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
-                        <img src="/src/assets/BajuRajut.svg" alt="" />
-                        <div className='flex justify-between text-sm items-center'>
-                            <p>Produk</p>
-                            <p>2 Mei 2024</p>
-                        </div>
-                        <div className='flex flex-col'>
-                            <p className='font-medium'>Baju Rajut</p>
-                            <p className='text-lg text-green-700'>Rp. 30,000</p>
                         </div>
                     </Link>
                 </div>

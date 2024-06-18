@@ -7,7 +7,7 @@ const db = mysql2.createPool({
     host: "localhost", 
     user: "root",
     password: "",
-    database: "bekasberkah_db"
+    database: "BekasBerkah"
 });
 
 const testConnection = async () => {

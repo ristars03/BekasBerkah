@@ -1,14 +1,14 @@
 import NavbarUtama from '../components/NavbarUtama';
-import DetailProdukDeskripsi from '../components/DetailProdukDeskripsi';
+import DetailProduk from '../components/DetailProduk';
 
 function PageDetailProduk() {
   return (
     <div className="container"> 
       <NavbarUtama />      
-      <DetailProdukDeskripsi />      
+      <DetailProduk />      
 
     </div>
   );
 }
 
-export default PageDetailProduk;
+export default PageDetailProduk

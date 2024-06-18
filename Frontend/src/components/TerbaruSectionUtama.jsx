@@ -5,7 +5,7 @@ export const TerbaruSectionUtama = () => {
         <div className='px-12 flex flex-col gap-4 py-12'>
             <h1 className='text-3xl font-bold'>Terbaru</h1>
             <div className='grid grid-cols-5 gap-12'>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/Lemari2Pintu.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -16,7 +16,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 370,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/TasSekolah.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -27,7 +27,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 78,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/Kasur.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -38,7 +38,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 850,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/PvnSepatuuSneakers.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -49,7 +49,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 98,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="/src/pages/PageDetailDeskripsi" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BajuRajut.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -60,7 +60,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 30,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/PintuKM.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -68,10 +68,10 @@ export const TerbaruSectionUtama = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-medium'>Pintu Kamar Mandi</p>
-                        <p className='text-lg text-green-700'>Rp. 12,000</p>
+                        <p className='text-lg text-green-700'>Rp. 120,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/MejaBelajar.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -82,7 +82,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 100,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/NovelTereLiye.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -93,7 +93,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 32,500</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/GitarUkulele.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -104,7 +104,7 @@ export const TerbaruSectionUtama = () => {
                         <p className='text-lg text-green-700'>Rp. 44,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/CelanaWanita.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>

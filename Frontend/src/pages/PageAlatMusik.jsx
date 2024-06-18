@@ -2,7 +2,7 @@ import NavbarUtama from '../components/NavbarUtama';
 import CatalogAlatMusik from '../components/CatalogAlatMusik';
 import KategoriLainnyaAlatMusik from '../components/KategoriLainnyaAlatMusik';
 import Banner from '../components/Banner';
-import Footer from '../components/Footer';
+import FooterUtama from '../components/FooterUtama';
 
 
 function PageFurniture() {
@@ -12,7 +12,7 @@ function PageFurniture() {
       <CatalogAlatMusik />
       <KategoriLainnyaAlatMusik />
       <Banner />
-      <Footer />  
+      <FooterUtama />  
     </div>
   );
 }

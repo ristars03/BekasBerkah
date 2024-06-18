@@ -66,7 +66,7 @@ export const TerbaruSection = () => {
                     </div>
                     <div className='flex flex-col'>
                         <p className='font-medium'>Pintu Kamar Mandi</p>
-                        <p className='text-lg text-green-700'>Rp. 12,000</p>
+                        <p className='text-lg text-green-700'>Rp. 120,000</p>
                     </div> 
                 </div>
                 <div className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>

@@ -4,7 +4,7 @@ export const CatalogBuku = () => {
     return (
         <div className='px-12 flex flex-col gap-4 py-12'>
             <div className='grid grid-cols-5 gap-12'>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuPJOK.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -15,7 +15,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 15,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuPrakarya.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -26,7 +26,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 35,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuBiologi.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -37,7 +37,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 20,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/NovelBedebahdiUjungTanduk.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -48,7 +48,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 50,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/NoveltereLiye.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -59,7 +59,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 32,500</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuNasiKangKang.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -70,7 +70,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 59,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/KamusInggrisIndonesia.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -81,7 +81,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 60,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuMahirBahasaIndo.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -92,7 +92,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 30,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuMuqaddamAnak.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -103,7 +103,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 45,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuUTBK.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -114,7 +114,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 85,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuSBP.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -125,7 +125,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 90,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/NovelDilan.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -136,7 +136,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Gratis</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuSeribuInspirasi.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -147,7 +147,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 25,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuMotivasi.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -158,7 +158,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 25,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/NovelPerahuKertas.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -169,7 +169,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 30,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuPKN.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -180,7 +180,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 45,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuIPA.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -191,7 +191,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 30,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/KomikDragonBall.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -202,7 +202,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Rp. 10,000</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/KomikDetektifConan.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
@@ -213,7 +213,7 @@ export const CatalogBuku = () => {
                         <p className='text-lg text-green-700'>Gratis</p>
                     </div>
                 </Link>
-                <Link to="/" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
+                <Link to="" className='rounded-md border border-black/15 flex flex-col gap-4 p-4'>
                     <img src="/src/assets/BukuKisahTanahJawa.svg" alt="" />
                     <div className='flex justify-between text-sm items-center'>
                         <p>Produk</p>
