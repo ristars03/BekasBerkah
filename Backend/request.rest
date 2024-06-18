@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJEaGFuZHkgMiIsImVtYWlsIjoiZW1haWwyQGdtYWlsLmNvbSIsImlhdCI6MTcxODQ3MTkxNiwiZXhwIjoxNzE4NDcxOTM2fQ.Rm_d21Qy93GQ9SqQrE0dvALIS-nANK0Sb27Y8dd9ujY
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Dhandy 3",
+    "email": "email3@gmail.com",
+    "password": "1234567",
+    "confPassword": "1234567"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "email2@gmail.com",
+    "password" :"123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
