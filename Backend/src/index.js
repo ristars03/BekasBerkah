@@ -21,10 +21,6 @@ try {
     console.log(error);
 }
 
-// app.use(cookieParser());
-// app.use(express.json());
-// app.use(router);
-
 app.get("/alamat", async (req, res) => { 
     try {
         const data = await query("SELECT * FROM alamat");
