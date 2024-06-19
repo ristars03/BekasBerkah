@@ -76,7 +76,7 @@ const ProfileDaftarAlamat = () => {
       {/* Modal Tambah Alamat */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-        <div className="bg-white rounded-lg shadow-lg w-full max-w-[800px] mx-auto mt-16 mb-16 p-6">
+        <div className="bg-white rounded-lg shadow-lg w-full max-w-[800px] mx-auto mt-4 mb-4 p-4">
           <h2 className="text-2xl font-bold mb-6 text-center">Tambah Alamat</h2>
       
           <form onSubmit={(e) => { e.preventDefault(); handleCloseModal(); }}>
