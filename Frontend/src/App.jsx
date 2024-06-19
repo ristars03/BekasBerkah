@@ -21,6 +21,8 @@ import PageTermConditionsUtama from './pages/PageTermConditionsUtama';
 import PagePrivacyLanding from './pages/PagePrivacyLanding';
 import PagePrivacyUtama from './pages/PagePrivacyUtama';
 import PageActionProfileBarang from './pages/PageActionProfileBarang';
+import PageActionProfileDetail from './pages/PageActionProfileDetail';
+import PageChat from './pages/PageChat';
 
 const Home = () => (
   <>
@@ -64,6 +66,8 @@ const AppRoutes = () => {
         <Route path="/src/pages/PagePrivacyLanding" element={<PagePrivacyLanding/>} />
         <Route path="/src/pages/PagePrivacyUtama" element={<PagePrivacyUtama/>} />
         <Route path="/src/pages/PageActionProfileBarang" element={<PageActionProfileBarang/>} />
+        <Route path="/src/pages/PageActionProfileDetail" element={<PageActionProfileDetail/>} />
+        <Route path="/src/pages/PageChat" element={<PageChat/>} />
      
         
        </Routes>

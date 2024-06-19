@@ -8,7 +8,7 @@ export const DetailDeskripsi = () => {
             <div className="flex-col justify-start items-start gap-6 inline-flex">
                 <div className="justify-start items-center gap-4 inline-flex">
                     <div className="w-14 h-14 relative">
-                        <img className="w-14 h-14 left-0 top-0 absolute rounded-full" src="https://via.placeholder.com/56x56" />
+                        <img className="w-14 h-14 left-0 top-0 absolute rounded-full" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" />
                     </div>
                     <div className="flex-col justify-start items-start gap-1 inline-flex">
                         <div className="text-neutral-800 text-2xl font-bold">Jisoo</div>
@@ -74,7 +74,7 @@ export const DetailDeskripsi = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="" className=" w-[500px] px-[21px] py-2.5 bg-white rounded-[10px] border border-green-700 justify-center items-center gap-2.5 inline-flex">
+                <Link to="/src/pages/PageChat" className=" w-[500px] px-[21px] py-2.5 bg-white rounded-[10px] border border-green-700 justify-center items-center gap-2.5 inline-flex">
                     <div className="text-center text-green-700 font-medium">Chat Penjual</div>
                     <div className="w-5 h-4 relative rounded-sm" />
                 </Link>
