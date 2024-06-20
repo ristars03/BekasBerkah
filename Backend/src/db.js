@@ -7,11 +7,7 @@ const db = mysql2.createPool({
     host: "localhost", 
     user: "root",
     password: "",
-<<<<<<< HEAD
     database: "BekasBerkah"
-=======
-    database: "bekasberkah"
->>>>>>> fd7ed81ec3038961d29b0088763e2fcc3f2392df
 });
 
 const testConnection = async () => {

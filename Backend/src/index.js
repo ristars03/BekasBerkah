@@ -57,11 +57,7 @@ app.get("/user", async (req, res) => {
     }
 });
 
-<<<<<<< HEAD
-app.listen(5000, ()=> console.log('Server running at port 5000'));
-=======
 app.listen(process.env.APP_PORT,() => {
     testConnection()
     console.log(`Server is running in http://localhost:${process.env.APP_PORT}`)
 })
->>>>>>> fd7ed81ec3038961d29b0088763e2fcc3f2392df
