@@ -1,21 +1,41 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [msg, setMsg] = useState("");
+  const navigate = useNavigate();
+
 
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/signin", {
-        email,
-        password,
+      const response = await fetch("http://localhost:5000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          username: username,
+          password: password
+        })
       });
-      console.log(response.data);
+    
+      console.log(response);
+    
+      if (!response.ok) {
+        setMsg("Login gagal");
+      } else {
+        const data = await response.json(); // Mengambil data JSON dari response
+        localStorage.setItem("user", data.data.username); // Menyimpan data ke localStorage
+        console.log(data.data.username); // Menampilkan data ke konsol (opsional)
+        setMsg("Login berhasil");
+        navigate("/src/pages/Beranda.jsx"); // Arahkan ke halaman beranda setelah login berhasil
+      }
     } catch (error) {
-      console.error("Error saat sign-in:", error);
+      console.error("Error:", error);
+      setMsg("Login gagal. Silakan coba lagi nanti.");
     }
   };
 
@@ -31,17 +51,17 @@ const SignIn = () => {
           <div className="px-16 py-1.5 mb-2">
             <input
               type="text"
-              id="username"
+              name="username"
               className="border border-gray-300 rounded-lg block w-full p-4 dark:placeholder-gray-400 dark:text-black"
               placeholder="Nama Pengguna atau Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
           <div className="px-16 py-1.5 mb-2">
             <input
               type="password"
-              id="password"
+              name="password"
               className="border border-gray-300 rounded-lg block w-full p-4 dark:placeholder-gray-400 dark:text-black"
               placeholder="Sandi"
               value={password}
@@ -74,6 +94,7 @@ const SignIn = () => {
               Daftar
             </Link>
           </div>
+          <p className="text-center mt-2">{msg}</p>
         </form>
       </div>
     </div>

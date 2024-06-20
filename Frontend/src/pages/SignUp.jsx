@@ -1,31 +1,33 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
-  const [name, setName] = useState("");
+  const [username, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post("http://localhost:5000/users", {
-        name,
-        email,
-        password,
-      });
 
-      console.log(response.data);
-      setMsg("Registration successful");
+    try {
+      const response = await fetch("http://localhost:5000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          username: username,
+          email: email,
+          password: password
+        })
+      });
+    
+      console.log(response);
+      setMsg("Pendaftaran berhasil");
     } catch (error) {
-      if (error.response) {
-        setMsg(error.response.data.message);
-      } else {
-        console.error("Error:", error.message);
-        setMsg("Registration failed. Please try again later.");
-      }
+      console.error("Error:", error);
+      setMsg("Pendaftaran gagal. Silakan coba lagi nanti.");
     }
   };
 
@@ -40,15 +42,15 @@ const SignUp = () => {
         <form onSubmit={handleRegister} className="px-16 py-1.5 mb-2">
           <input
             type="text"
-            id="username"
+            name="username"
             className="border border-gray-300 rounded-lg block w-full p-4 dark:placeholder-gray-400 dark:text-black"
             placeholder="Nama Pengguna"
-            value={name}
+            value={username}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
-            id="email"
+            name="email"
             className="border border-gray-300 rounded-lg block w-full p-4 dark:placeholder-gray-400 dark:text-black mt-2"
             placeholder="Alamat Email"
             value={email}
@@ -56,7 +58,7 @@ const SignUp = () => {
           />
           <input
             type="password"
-            id="password"
+            name="password"
             className="border border-gray-300 rounded-lg block w-full p-4 dark:placeholder-gray-400 dark:text-black mt-2"
             placeholder="Sandi"
             value={password}
