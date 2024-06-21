@@ -5,7 +5,7 @@ export const TB_DeskripsiBarang = () => {
         <div className='w-[1444px] relative mt-8 p-8 bg-white rounded-lg border gap-2 border-zinc-200 mx-auto '>
             <h1 className='text-3xl font-bold py-4 px-4'>Deskripsi Barang</h1>
             <div className="flex items-center">
-                <div className="px-4 py-2 text-zinc-700 font-bold">Nama Barang</div>
+                <div className="px-4 py-2 text-zinc-700 font-bold">Deskripsi Barang</div>
                 <div className="px-2 bg-green-700 rounded text-white text-xs">Wajib</div>
             </div>
             <div className="flex items-start justify-between ">

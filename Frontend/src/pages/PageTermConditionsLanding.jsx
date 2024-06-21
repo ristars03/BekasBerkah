@@ -4,7 +4,7 @@ import FooterTermPrivacy from '../components/FooterTermPrivacy'
 
 function PageTermConditionsLanding() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarLanding />
       <TermConditions />
       <FooterTermPrivacy />

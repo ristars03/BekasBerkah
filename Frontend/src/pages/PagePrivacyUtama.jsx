@@ -4,7 +4,7 @@ import FooterTermPrivacy from '../components/FooterTermPrivacy'
 
 function PagePrivacyUtama() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />
       <Privacy />
       <FooterTermPrivacy />

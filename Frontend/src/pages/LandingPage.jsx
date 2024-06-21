@@ -6,7 +6,7 @@ import FooterLanding from '../components/FooterLanding';
 
 function LandingPage() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarLanding />
       <HeroSection />
       <KategoriLanding/>

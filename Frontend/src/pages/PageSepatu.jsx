@@ -7,7 +7,7 @@ import FooterUtama from '../components/FooterUtama';
 
 function PageFurniture() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />
       <CatalogSepatu />
       <KategoriLainnyaSepatu />

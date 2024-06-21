@@ -3,7 +3,7 @@ import ProfileActionDetailBarang from '../components/ProfileActionDetailBarang';
 
 function ProfileActionProfileDetail() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama /> 
       <ProfileActionDetailBarang />     
 

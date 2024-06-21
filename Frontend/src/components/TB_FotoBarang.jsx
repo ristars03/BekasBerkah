@@ -12,12 +12,12 @@ const TB_FotoBarang = () => {
       </div>
       <div className="flex">
         {/* Kolom Keterangan */}
-        <div className="w-[340px] px-4  text-zinc-700">
+        <div className="w-[340px] px-4 text-zinc-700">
           Masukan foto barang secara jelas dari segala sisi yang mendukung.
         </div>
-        
+
         {/* Kolom Foto Barang */}
-        <Link to="" className="grid grid-cols-5 gap-14 ml-10 mt-[-32px]">
+        <Link to="" className="grid grid-cols-5 gap-10 ml-8 mt-[-32px] px-2">
           {images.map((_, index) => (
             <div
               key={index}
@@ -35,6 +35,29 @@ const TB_FotoBarang = () => {
           ))}
         </Link>
       </div>
+      <div className="flex items-center pt-12">
+        <div className="px-4 py-2 text-zinc-700 font-bold">Hasil Scan</div>
+      </div>
+      <div className="flex items-start justify-between">
+        <div className="w-[340px] px-4 text-zinc-700">Hasil scan kelayakan barang. Jika keterangan barang <b>"Layak"</b> dapat lanjut ke tahap berikutnya. Jika keterangan barang <b>"Tidak Layak"</b> maka barang tidak dapat di upload pada platform BekasBerkah.</div>
+        <div className="flex-grow px-10 mt-[-46px]">
+          <div className="w-[310px] h-[310px] rounded-lg justify-center items-center inline-flex">
+            <div className="w-[310px] h-[280px] bg-zinc-100 rounded-lg justify-center items-center inline-flex">
+              <img src='/src/assets/gantiprofile.svg' className="w-25 h-25 relative" alt="Profile" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-start justify-between px-[380px] hidden">
+      <div className="px-6 py-2 bg-green-200 rounded-lg border border-green-500 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-justify text-green-600">Barang Layak</div>
+      </div>
+      </div>
+      <div className="flex items-start justify-between px-[380px] py-2 hidden">
+      <div className="px-6 py-2 bg-red-200 rounded-lg border border-red-500 justify-center items-center gap-2.5 inline-flex">
+        <div className="text-justify text-red-600">Barang Tidak Layak</div>
+      </div>
+    </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ import TB_BeratBarang from '../components/TB_BeratBarang';
 
 function PageTambahBarang() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />
       <TB_InformasiBarang />
       <TB_FotoBarang />

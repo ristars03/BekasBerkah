@@ -5,8 +5,7 @@ const jwt = require ("jsonwebtoken")
 const register = async (req, res) => {
 
     const { body } = req;
-    // body.password = hash
-    // Periksa apakah semua properti yang diperlukan ada dalam objek body
+
     if (!body.email ||!body.username ||!body.password) {
         return res.status(400).json({
             message: 'Data yang dikirim tidak lengkap atau tidak sesuai format.'
@@ -14,24 +13,14 @@ const register = async (req, res) => {
     }
 
     try {
-        // // Cek apakah data dengan nama yang sama sudah ada
-        // const dataAlreadyExists = await userModel.getUserByEmail(body.email);
-        // if (dataAlreadyExists.length > 0) {
-        //     return res.status(400).json({
-        //         message: `Email: ${body.email} sudah terdaftar, silahkan Email yang lain!`
-        //     });
-        // }
-
-        // Tambahkan data user
+        
         await userModels.registerUser(body);
 
-        // Kirim respons berhasil
         res.status(201).json({
             message: 'Register berhasil!',
             data: body
         });
     } catch (error) {
-        // Tangani kesalahan server
         res.status(500).json({
             message: "Server error!",
             serverMessage: error
@@ -56,12 +45,6 @@ const login = async (req, res) => {
             })
         }
 
-        //if user exist then check the password or compare the password
-        // const checkCorrectPassword = await bcrypt.compare(
-        //     password, 
-        //     user.password
-        // )
-
         const checkCorrectPassword = password === user.password
 
         //if password is wrong
@@ -82,7 +65,6 @@ const login = async (req, res) => {
             {expiresIn: "15d"}
         )
 
-        // set token in the browser cookies and send the response to the client
         res
         .cookie("accessToken", token, {
             httpOnly: true,

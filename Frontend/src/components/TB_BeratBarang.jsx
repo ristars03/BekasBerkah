@@ -31,8 +31,8 @@ export const TB_BeratBarang = () => {
                 </div>
             </div>
             <div className="w-[1444px] flex justify-end gap-4 mb-8 mx-auto">
-                <Link to="" className="px-14 py-3 font-medium border border-green-700 bg-white text-green-700 rounded-lg">Batal</Link>
-                <Link to="" className="px-14 py-3 font-medium bg-green-700 text-white rounded-lg">Simpan</Link>
+                <Link to="" className="px-8 py-3 font-medium border border-green-700 bg-white text-green-700 rounded-lg">Batal</Link>
+                <Link to="" className="px-8 py-3 font-medium bg-green-700 text-white rounded-lg">Simpan</Link>
             </div>
         </>
     );

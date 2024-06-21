@@ -3,7 +3,7 @@ import DetailDeskripsi from '../components/DetailDeskripsi';
 
 function PageDetailDeskripsi() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />      
       <DetailDeskripsi />  
 

@@ -5,7 +5,7 @@ import ProfileAkun from '../components/ProfileAkun';
 
 function PageProfileAkun() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />  
       <ProfileAkun />
     </div>

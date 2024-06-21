@@ -3,7 +3,7 @@ import DetailProduk from '../components/DetailProduk';
 
 function PageDetailProduk() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />      
       <DetailProduk />      
 

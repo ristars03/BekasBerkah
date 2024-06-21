@@ -7,7 +7,7 @@ import FooterUtama from '../components/FooterUtama';
 
 function Beranda() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />
       <HeroSection />
       <KategoriUtama/>

@@ -1,46 +1,28 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-
- // CONTOH MENGAMBIL NAMA USERNAME DARI DATABASE
-    // const [datas, setDatas] = useState([]);
-
-    // useEffect(() => {
-    //   const fetchData = async () => {
-    //     try {
-    //       const response = await fetch('http://localhost:5000/jurusan');
-    //       const data = await response.json();
-    //       setDatas(data);
-    //     } catch (error) {
-    //       console.error('Error fetching data:', error);
-    //     }
-    //   };
-    //   fetchData();
-    // }, []);
-
-    // console.log(datas);
+console.log(localStorage.getItem("user"))
 
 export const ProfileAkun = () => {
-    const [nama, setNama] = useState('Jessy');
-    const [email, setEmail] = useState('jessy@gmail.com');
-    const [nomorHp, setNomorHp] = useState('08346524865');
+    const [formData, setFormData] = useState({
+        username: '',
+        email: '',
+    });
 
-    const handleUbahNama = (event) => {
-        setNama(event.target.value);
+    const handleChange = (e) => {
+        const { username, value } = e.target;
+        setFormData({
+            ...formData,
+            [username]: value
+        });
     };
 
-    const handleUbahEmail = (event) => {
-        setEmail(event.target.value);
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission, e.g., send data to a server
+        console.log('Form submitted:', formData);
     };
 
-    const handleUbahNomorHp = (event) => {
-        setNomorHp(event.target.value);
-    };
-
-    // const handleSaveProfile = () => {
-    //     // Logic to save the profile information goes here
-    //     console.log("Profile saved:", { nama, email, nomorHp });
-    // };
 
     return (
         <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
@@ -76,21 +58,30 @@ export const ProfileAkun = () => {
                 </div>
                 <div className="flex flex-col py-6 ml-8 w-1/2">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Detail Akun</h2>
-                    <div className="flex items-center mb-4">
-                        <label className="mr-2 text-gray-600 w-24">Nama</label>
-                        <input type="text" value={nama} onChange={handleUbahNama} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:one-none" />
-                    </div>
-                    <div className="flex items-center mb-4">
-                        <label className="mr-2 text-gray-600 w-24">Email</label>
-                        <input type="email" value={email} onChange={handleUbahEmail} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none" />
-                    </div>
-                    <div className="flex items-center mb-6">
-                        <label className="mr-2 text-gray-600 w-24">Nomor Hp</label>
-                        <input type="tel" value={nomorHp} onChange={handleUbahNomorHp} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none" />
-                    </div>
-                    <div className='flex items-end justify-end'>
-                        <button className='h-10 bg-green-700 text-white font-medium rounded-md hover:bg-green-600 w-[130px]'>Simpan</button>
-                    </div>
+                    <form onSubmit={handleSubmit}>
+                        <div className="flex items-center mb-4">
+                            <label className="mr-2 text-gray-600 w-24">Nama</label>
+                            <input
+                                name="username"
+                                value={formData.username}
+                                onChange={handleChange}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none"
+                            />
+                        </div>
+                        <div className="flex items-center mb-4">
+                            <label className="mr-2 text-gray-600 w-24">Email</label>
+                            <input
+                                name="email"
+                                type="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none"
+                            />
+                        </div>
+                        <button type="submit" className="px-4 py-2 bg-green-700 text-white rounded-md">
+                            Simpan
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

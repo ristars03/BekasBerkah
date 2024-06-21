@@ -8,7 +8,7 @@ export const TB_InformasiBarang = () => {
                 <div className="px-4 py-2 text-zinc-700 font-bold">Nama Barang</div>
                 <div className="px-2 bg-green-700 rounded text-white text-xs">Wajib</div>
             </div>
-            <div className="flex items-start justify-between ">
+            <div className="flex items-start justify-between">
                 <div className="w-[340px] px-4 text-align text-zinc-700">Nama barang min 40 karakter dengan memasukkan merek, jenis produk, warna, bahan atau tipe.</div>
                 <div className="flex-grow px-10 mt-[-32px] mb-8">
                     <input type="text" className="border border-gray-300 rounded-lg w-full p-4" placeholder="Contoh : Sepatu nike mercurial CR7 Pemakaian normal selama lima tahun" />

@@ -5,7 +5,7 @@ import ProfileDaftarAlamat from '../components/ProfileDaftarAlamat';
 
 function PageProfileDaftarAlamat() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />  
       <ProfileDaftarAlamat />  
     </div>

@@ -3,7 +3,7 @@ import ProfileKatalogBarang from '../components/ProfileKatalogBarang';
 
 function PageProfileKatalogBarang() {
   return (
-    <div className="container"> 
+    <div className="container mx-auto"> 
       <NavbarUtama />  
       <ProfileKatalogBarang />  
     </div>
