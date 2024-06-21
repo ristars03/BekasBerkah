@@ -1,43 +1,75 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
-console.log(localStorage.getItem("user"))
+const ProfileAkun = () => {
+    const [formData, setFormData] = useState({ username: "", email: "" });
+    const [msg, setMsg] = useState("");
+    const navigate = useNavigate();
 
-export const ProfileAkun = () => {
-    const [formData, setFormData] = useState({
-        username: '',
-        email: '',
-    });
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("http://localhost:5000/ProfileAkun");
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                const data = await response.json();
+                console.log("Data fetched:", data);
+                setFormData({
+                    username: data.username,
+                    email: data.email
+                });
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+    
+        fetchData();
+    }, []);
 
     const handleChange = (e) => {
-        const { username, value } = e.target;
+        const { name, value } = e.target;
         setFormData({
             ...formData,
-            [username]: value
+            [name]: value
         });
     };
-
-    const handleSubmit = (e) => {
+    
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Handle form submission, e.g., send data to a server
-        console.log('Form submitted:', formData);
+        try {
+            const response = await fetch("http://localhost:5000/ProfileAkun", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+    
+            if (!response.ok) {
+                setMsg("Gagal memperbarui profil");
+            } else {
+                const data = await response.json();
+                localStorage.setItem("user", data.username);
+                setMsg("Profil berhasil diperbarui");
+                navigate("/src/pages/PageProfileAkun.jsx");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            setMsg("Gagal memperbarui profil. Silakan coba lagi nanti.");
+        }
     };
-
+    
 
     return (
         <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
             <div className='h-14 px-40 bg-white border border-zinc-200 text-gray-500 flex mx-auto items-center justify-between'>
-                {/* Left Section */}
                 <Link to='/src/pages/PageProfileAkun' className="flex items-center text-green-700 font-medium">
                     <h1 className="text-xl underline">Akun</h1>
                 </Link>
-
-                {/* Center Section */}
                 <Link to='/src/pages/PageProfileDaftarAlamat' className="flex items-center hover:text-green-700 font-medium">
                     <h1 className="text-xl">Daftar Alamat</h1>
                 </Link>
-
-                {/* Right Section */}
                 <Link to='/src/pages/PageProfileKatalogBarang' className="flex items-center hover:text-green-700 font-medium">
                     <h1 className="text-xl">Katalog Barang</h1>
                 </Link>
@@ -58,6 +90,7 @@ export const ProfileAkun = () => {
                 </div>
                 <div className="flex flex-col py-6 ml-8 w-1/2">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Detail Akun</h2>
+                    {msg && <p className="mb-4 text-red-500">{msg}</p>}
                     <form onSubmit={handleSubmit}>
                         <div className="flex items-center mb-4">
                             <label className="mr-2 text-gray-600 w-24">Nama</label>
