@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export const ProfileKatalogBarang = () => {
     return (
-        <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
+        <div className='w-[1444px] h-[564px] relative mt-6 bg-white rounded-lg border border-zinc-200 mx-auto'>
             <div className='h-14 px-40 bg-white border border-zinc-200 text-gray-500 flex mx-auto items-center justify-between'>
                 {/* Left Section */}
                 <Link to='/src/pages/PageProfileAkun' className="flex items-center hover:text-green-800 font-medium">
