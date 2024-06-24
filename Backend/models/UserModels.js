@@ -15,6 +15,7 @@ const getUserById = async(id) => {
     }
 }
 
+
 const registerUser = (body) => {
    try {
     const { email, username, password } = body;

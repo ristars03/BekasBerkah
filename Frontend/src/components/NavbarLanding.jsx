@@ -8,8 +8,8 @@ export const NavbarLanding = () => {
             </Link>
                 <div className='flex w-full'>
                     <div className='border border-gray-400 rounded-l-md flex items-center px-2 w-1/3 md:w-1/4'>
-                        <select name="" id="" className='w-full outline-none'>
-                        <option value="" disabled selected hidden >Pilih Kategori</option>
+                        <select name="" id="" className='w-full outline-none defaultValue=""'>
+                        <option value="" >Pilih Kategori</option>
                             <option value="">Furniture</option>
                             <option value="">Pakaian</option>
                             <option value="">Buku</option>
