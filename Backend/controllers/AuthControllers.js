@@ -86,4 +86,18 @@ const login = async (req, res) => {
     }
 }
 
-module.exports = {register, login}
+const getProfile = async (req, res) => {
+    try {
+        const Username = req.Username;
+        const user = await userModels.getUserByUsername(Username);
+        if (!user) {
+            return res.status(404).json({ msg: "User not found" });
+        }
+        res.json({ data: user });
+    } catch (error) {
+        console.error("Error in getProfile:", error);
+        res.status(500).json({ msg: "Server error" });
+    }
+};
+
+module.exports = {register, login, getProfile}
