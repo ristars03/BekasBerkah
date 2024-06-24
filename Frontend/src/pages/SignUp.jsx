@@ -33,17 +33,10 @@ const SignUp = () => {
 
   return (
     <div className="flex min-h-screen">
-<<<<<<< HEAD
-    <div className="relative w-3/4 bg-green-700">
-      <img src="/public/moto.png" alt="Bottom Cloud" className="absolute inset-0 w-full h-full object-cover" />
-    </div>
-    <div className="absolute inset-y-0 right-0 w-7/12 bg-white p-8 rounded-l-3xl shadow-md">
-=======
       <div className="relative w-3/4 bg-green-700">
         <img src="/public/moto.png" alt="Bottom Cloud" className="absolute inset-0 w-full h-full object-cover" />
       </div>
       <div className="absolute inset-y-0 right-0 w-7/12 bg-white p-8 rounded-l-3xl shadow-md">
->>>>>>> 166a8834f4c4be1cdd472eeae1b534760ea5fb6f
         <div className="flex flex-col justify-center pt-32 px-16 p-4 text-4xl font-bold">
           Daftar
         </div>

@@ -101,116 +101,117 @@ const getProfile = async (req, res) => {
 };
 
 module.exports = {register, login, getProfile}
-const userModels = require('../models/UserModels.js');
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 
-const register = async (req, res) => {
-  const { body } = req;
+// const userModels = require('../models/UserModels.js');
+// const bcrypt = require("bcryptjs");
+// const jwt = require("jsonwebtoken");
 
-  if (!body.email || !body.username || !body.password) {
-    return res.status(400).json({
-      message: 'Data yang dikirim tidak lengkap atau tidak sesuai format.'
-    });
-  }
+// const register = async (req, res) => {
+//   const { body } = req;
 
-  try {
-    await userModels.registerUser(body);
+//   if (!body.email || !body.username || !body.password) {
+//     return res.status(400).json({
+//       message: 'Data yang dikirim tidak lengkap atau tidak sesuai format.'
+//     });
+//   }
 
-    res.status(201).json({
-      message: 'Register berhasil!',
-      data: body
-    });
-  } catch (error) {
-    res.status(500).json({
-      message: "Server error!",
-      serverMessage: error
-    });
-  }
-};
+//   try {
+//     await userModels.registerUser(body);
 
-const login = async (req, res) => {
-  const username = req.body.username;
-  const password = req.body.password;
+//     res.status(201).json({
+//       message: 'Register berhasil!',
+//       data: body
+//     });
+//   } catch (error) {
+//     res.status(500).json({
+//       message: "Server error!",
+//       serverMessage: error
+//     });
+//   }
+// };
 
-  try {
-    let user = await userModels.getUserByUsername(username);
-    user = user[0][0];
-    if (!user) {
-      return res.status(404).json({
-        success: false,
-        message: "User not found"
-      });
-    }
+// const login = async (req, res) => {
+//   const username = req.body.username;
+//   const password = req.body.password;
 
-    const checkCorrectPassword = password === user.password;
+//   try {
+//     let user = await userModels.getUserByUsername(username);
+//     user = user[0][0];
+//     if (!user) {
+//       return res.status(404).json({
+//         success: false,
+//         message: "User not found"
+//       });
+//     }
 
-    if (!checkCorrectPassword) {
-      return res.status(401).json({
-        success: false,
-        message: "Incorrect email or password"
-      });
-    }
+//     const checkCorrectPassword = password === user.password;
 
-    const { password: hashedPassword, role, ...rest } = user;
+//     if (!checkCorrectPassword) {
+//       return res.status(401).json({
+//         success: false,
+//         message: "Incorrect email or password"
+//       });
+//     }
 
-    const token = jwt.sign(
-      { id: user.id },
-      'gahg48589a45ajfjAUFAHHFIhufuu',
-      { expiresIn: "15d" }
-    );
+//     const { password: hashedPassword, role, ...rest } = user;
 
-    res
-      .cookie("accessToken", token, {
-        httpOnly: true,
-        expires: token.expiresIn,
-      })
-      .status(200)
-      .json({
-        message: "Login Success!",
-        token,
-        data: { ...rest },
-        role,
-      });
+//     const token = jwt.sign(
+//       { id: user.id },
+//       'gahg48589a45ajfjAUFAHHFIhufuu',
+//       { expiresIn: "15d" }
+//     );
 
-  } catch (err) {
-    res
-      .status(500)
-      .json({ success: false, message: "Failed to log in" });
-  }
-};
+//     res
+//       .cookie("accessToken", token, {
+//         httpOnly: true,
+//         expires: token.expiresIn,
+//       })
+//       .status(200)
+//       .json({
+//         message: "Login Success!",
+//         token,
+//         data: { ...rest },
+//         role,
+//       });
 
-const updateProfile = async (req, res) => {
-  const { body } = req;
-  const userId = req.user.id; // Assuming you have user id from the authentication middleware
+//   } catch (err) {
+//     res
+//       .status(500)
+//       .json({ success: false, message: "Failed to log in" });
+//   }
+// };
 
-  if (!body.email && !body.username && !body.password) {
-    return res.status(400).json({
-      message: 'Tidak ada data yang dikirim untuk diperbarui.'
-    });
-  }
+// const updateProfile = async (req, res) => {
+//   const { body } = req;
+//   const userId = req.user.id; // Assuming you have user id from the authentication middleware
 
-  try {
-    const updates = {};
-    if (body.email) updates.email = body.email;
-    if (body.username) updates.username = body.username;
-    if (body.password) updates.password = await bcrypt.hash(body.password, 10);
+//   if (!body.email && !body.username && !body.password) {
+//     return res.status(400).json({
+//       message: 'Tidak ada data yang dikirim untuk diperbarui.'
+//     });
+//   }
 
-    await userModels.updateUserProfile(userId, updates);
+//   try {
+//     const updates = {};
+//     if (body.email) updates.email = body.email;
+//     if (body.username) updates.username = body.username;
+//     if (body.password) updates.password = await bcrypt.hash(body.password, 10);
 
-    res.status(200).json({
-      message: 'Profil berhasil diperbarui!',
-      data: updates
-    });
-  } catch (error) {
-    res.status(500).json({
-      message: "Server error!",
-      serverMessage: error
-    });
-  }
-};
+//     await userModels.updateUserProfile(userId, updates);
 
-module.exports = { register, login, updateProfile };
+//     res.status(200).json({
+//       message: 'Profil berhasil diperbarui!',
+//       data: updates
+//     });
+//   } catch (error) {
+//     res.status(500).json({
+//       message: "Server error!",
+//       serverMessage: error
+//     });
+//   }
+// };
+
+// module.exports = { register, login, updateProfile };
 
 // const userModels = require ('../models/UserModels.js')
 // const bcrypt = require ("bcryptjs")
