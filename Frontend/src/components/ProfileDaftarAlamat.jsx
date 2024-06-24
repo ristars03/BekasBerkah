@@ -16,7 +16,7 @@ const ProfileDaftarAlamat = () => {
   };
 
   return (
-    <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
+    <div className='w-[1444px] h-[564px] relative mt-6 bg-white rounded-lg border border-zinc-200 mx-auto '>
       <div className='h-14 px-40 bg-white border border-zinc-200 text-gray-500 flex mx-auto items-center justify-between'>
         {/* Left Section */}
         <Link to='/src/pages/PageProfileAkun' className="flex items-center hover:text-green-800 font-medium">
@@ -48,8 +48,12 @@ const ProfileDaftarAlamat = () => {
           </button>
         </div>
       </div>
-
-      <div className="w-full ">
+      <div className="flex flex-col w-full py-32 md:px-12">
+        <div className="flex items-center justify-center h-14 px-40">
+          <h1 className="text-gray-400 text-lg">Pencarian Tidak Ditemukan</h1>
+        </div>
+      </div>
+      <div className="w-full hidden ">
         <div className='p-4 ml-12 mr-12 flex items-center bg-white rounded-lg border border-zinc-400'>
           <div className="flex-col justify-center items-start gap-2 inline-flex">
             <div className="px-2 h-5 flex items-center bg-green-700 rounded">
@@ -76,78 +80,78 @@ const ProfileDaftarAlamat = () => {
       {/* Modal Tambah Alamat */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-        <div className="bg-white rounded-lg shadow-lg w-full max-w-[800px] mx-auto mt-4 mb-4 p-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Tambah Alamat</h2>
-      
-          <form onSubmit={(e) => { e.preventDefault(); handleCloseModal(); }}>
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-2 font-semibold" htmlFor="name">Nama penerima</label>
-              <input
-                type="text"
-                id="name"
-                className="w-full border border-gray-300 p-3 rounded-lg"
-                placeholder="Nama penerima..."
-                maxLength="255"
-              />
-              <span className="block text-gray-400 text-right">0/255</span>
-            </div>
-      
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-2 font-semibold" htmlFor="phone">Nomor hp</label>
-              <input
-                type="text"
-                id="phone"
-                className="w-full border border-gray-300 p-3 rounded-lg"
-                placeholder="088888888888"
-                maxLength="255"
-              />
-              <span className="block text-gray-400 text-right">0/255</span>
-            </div>
-      
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-2 font-semibold" htmlFor="label">Label alamat</label>
-              <input
-                type="text"
-                id="label"
-                className="w-full border border-gray-300 p-3 rounded-lg"
-                placeholder="Rumah"
-                maxLength="255"
-              />
-              <span className="block text-gray-400 text-right">0/255</span>
-            </div>
-      
-            <div className="mb-4">
-              <label className="block text-gray-700 mb-2 font-semibold" htmlFor="address">Alamat lengkap</label>
-              <textarea
-                id="address"
-                className="w-full border border-gray-300 p-3 rounded-lg"
-                placeholder="Tulis alamatmu..."
-                maxLength="255"
-                rows="4"
-              />
-              <span className="block text-gray-400 text-right">0/255</span>
-            </div>
-      
-            <div className="flex justify-end space-x-4">
-              <button
-                type="button"
-                className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600"
-                onClick={handleCloseModal}
-              >
-                Batal
-              </button>
-              <button
-                type="submit"
-                className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600"
-              >
-                Simpan
-              </button>
-            </div>
-          </form>
+          <div className="bg-white rounded-lg shadow-lg w-full max-w-[800px] mx-auto mt-4 mb-4 p-4">
+            <h2 className="text-2xl font-bold mb-6 text-center">Tambah Alamat</h2>
+
+            <form onSubmit={(e) => { e.preventDefault(); handleCloseModal(); }}>
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold" htmlFor="name">Nama penerima</label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full border border-gray-300 p-3 rounded-lg"
+                  placeholder="Nama penerima..."
+                  maxLength="255"
+                />
+                <span className="block text-gray-400 text-right">0/255</span>
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold" htmlFor="phone">Nomor hp</label>
+                <input
+                  type="text"
+                  id="phone"
+                  className="w-full border border-gray-300 p-3 rounded-lg"
+                  placeholder="088888888888"
+                  maxLength="255"
+                />
+                <span className="block text-gray-400 text-right">0/255</span>
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold" htmlFor="label">Label alamat</label>
+                <input
+                  type="text"
+                  id="label"
+                  className="w-full border border-gray-300 p-3 rounded-lg"
+                  placeholder="Rumah"
+                  maxLength="255"
+                />
+                <span className="block text-gray-400 text-right">0/255</span>
+              </div>
+
+              <div className="mb-4">
+                <label className="block text-gray-700 mb-2 font-semibold" htmlFor="address">Alamat lengkap</label>
+                <textarea
+                  id="address"
+                  className="w-full border border-gray-300 p-3 rounded-lg"
+                  placeholder="Tulis alamatmu..."
+                  maxLength="255"
+                  rows="4"
+                />
+                <span className="block text-gray-400 text-right">0/255</span>
+              </div>
+
+              <div className="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  className="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600"
+                  onClick={handleCloseModal}
+                >
+                  Batal
+                </button>
+                <button
+                  type="submit"
+                  className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+                >
+                  Simpan
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-      
-      
+
+
       )}
     </div>
   );

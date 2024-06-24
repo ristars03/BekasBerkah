@@ -9,60 +9,64 @@ const ProfileAkun = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:5000/ProfileAkun");
+                const response = await fetch("http://localhost:5000/profile", {
+                    headers: {
+                        'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                });
                 if (!response.ok) {
                     throw new Error("Network response was not ok");
                 }
                 const data = await response.json();
                 console.log("Data fetched:", data);
                 setFormData({
-                    username: data.username,
-                    email: data.email
+                    username: data.username || "",  // Make sure to provide default values
+                    email: data.email || ""
                 });
             } catch (error) {
                 console.error("Error fetching data:", error);
             }
         };
-    
+
         fetchData();
     }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData({
-            ...formData,
+        setFormData(prevFormData => ({
+            ...prevFormData,
             [name]: value
-        });
+        }));
     };
-    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/ProfileAkun", {
+            const response = await fetch("http://localhost:5000/profile", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 },
                 body: JSON.stringify(formData)
             });
-    
+
             if (!response.ok) {
-                setMsg("Gagal memperbarui profil");
+                setMsg("Gagal memperbarui profile!");
             } else {
                 const data = await response.json();
                 localStorage.setItem("user", data.username);
                 setMsg("Profil berhasil diperbarui");
-                navigate("/src/pages/PageProfileAkun.jsx");
+                navigate('/src/pages/PageProfileAkun');
             }
         } catch (error) {
             console.error("Error:", error);
             setMsg("Gagal memperbarui profil. Silakan coba lagi nanti.");
         }
     };
-    
 
     return (
-        <div className='w-[1444px] h-[564px] relative mt-8 bg-white rounded-lg border border-zinc-200 mx-auto'>
+        <div className='w-[1444px] h-[564px] relative mt-6 bg-white rounded-lg border border-zinc-200 mx-auto'>
             <div className='h-14 px-40 bg-white border border-zinc-200 text-gray-500 flex mx-auto items-center justify-between'>
                 <Link to='/src/pages/PageProfileAkun' className="flex items-center text-green-700 font-medium">
                     <h1 className="text-xl underline">Akun</h1>
@@ -111,9 +115,11 @@ const ProfileAkun = () => {
                                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none"
                             />
                         </div>
-                        <button type="submit" className="px-4 py-2 bg-green-700 text-white rounded-md">
-                            Simpan
-                        </button>
+                        <div className="flex justify-end">
+                            <button type="submit" className="px-4 py-2 bg-green-700 text-white rounded-md">
+                                Simpan
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
