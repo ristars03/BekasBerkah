@@ -24,7 +24,9 @@ const SignUp = () => {
       });
 
       console.log(response);
-      setMsg("Pendaftaran berhasil");
+      if (!response.ok) {
+        setMsg("Pendaftaran berhasil");
+      }
     } catch (error) {
       console.error("Error:", error);
       setMsg("Pendaftaran gagal. Silakan coba lagi nanti.");

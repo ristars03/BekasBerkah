@@ -80,7 +80,7 @@ const SignIn = () => {
           <div className="flex px-16 flex-col items-end text-center">
             <button
               type="submit"
-              className="px-16 py-2 item-center text-white bg-primary-700 font-normal rounded-lg block w-full p-4 text-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-500"
+              className="px-16 py-3 item-center text-white bg-primary-700 font-normal rounded-lg block w-full p-4 text-lg dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-500"
             >
               Masuk
             </button>
